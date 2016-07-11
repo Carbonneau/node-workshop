@@ -19,4 +19,18 @@ function hello() {setTimeout(function(){
 //hi();
 //hello();
 
+/*
 
+Write a piece of code using setTimeout that prints “Hello World!” every 
+10 seconds forever.
+
+*/
+
+function hellohello() {
+    setTimeout(function(){
+      hi();
+      hellohello();
+    }, 1000);
+}
+
+hellohello();
